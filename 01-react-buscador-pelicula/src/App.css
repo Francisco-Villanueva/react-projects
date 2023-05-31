@@ -1,0 +1,67 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+form {
+  display: flex;
+}
+.movies {
+  list-style: none;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1em;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border: 1px solid #cecece33;
+  border-radius: 1em;
+  transition: all 0.3s;
+}
+.movie h3,
+.movie p {
+  margin: 0;
+}
+.movie img {
+  border-radius: 1em;
+}
+.movie:hover {
+  background-color: #cecece33;
+}
+.pagination {
+  display: flex;
+  gap: 1em;
+}
+.pagination button {
+  padding: 0.4em 2em;
+}
+.pagination button:hover {
+  background-color: #cecece33;
+}
+.pagination_numbers {
+  display: flex;
+  gap: 0.5em;
+}
+.pagination__button {
+  /* Estilos para los botones de página */
+  /* ... */
+}
+
+.pagination__button--active {
+  /* Estilos para resaltar el número de página actual con un borde */
+  outline: 1px solid rgb(70, 70, 180);
+  /* ... */
+}

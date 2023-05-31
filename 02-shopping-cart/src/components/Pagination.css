@@ -1,0 +1,14 @@
+.pagination {
+  display: flex;
+  gap: 1em;
+}
+.pagination div {
+  display: flex;
+  gap: 0.75em;
+}
+.pagination_button {
+  display: flex;
+}
+.pagination__button--active {
+  outline: 1px solid #fff;
+}
