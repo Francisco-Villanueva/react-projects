@@ -92,6 +92,16 @@ function App() {
       )}
 
       <main>{loading ? "Cargando.." : <Movies movies={moviesToShow()} />}</main>
+      {!loading &&
+        (movies.length ? (
+          <Pagination
+            currentPage={currentPage}
+            totalPages={Math.ceil(movies.length / 9)} // Calcula el número total de páginas
+            onPageChange={setCurrentPage} // Actualiza la página actual al hacer clic en una página
+          />
+        ) : (
+          ""
+        ))}
     </div>
   );
 }

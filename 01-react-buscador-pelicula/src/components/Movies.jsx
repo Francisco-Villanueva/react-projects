@@ -3,9 +3,11 @@ function ListOfMovies({ movies }) {
     <ul className="movies">
       {movies.map((m) => (
         <li className="movie" key={m.id}>
-          <h3>{m.title}</h3>
-          <p>{m.year}</p>
-          <img src={m.poster} alt={m.title} />
+          <img className="movie_img" src={m.poster} alt={m.title} />
+          <section className="movies-header">
+            <h3>{m.title}</h3>
+            <p>{m.year}</p>
+          </section>
         </li>
       ))}
     </ul>
